@@ -63,6 +63,8 @@ public class VillagerTradeHandler implements IVillageTradeHandler, IVillagerInfo
 
     protected void addRecipes(Object recipeList, Random rand) {
         addTrade(recipeList, rand, 0.7F, new Offer(Items.emerald), new Offer(Items.coal, 24, 32));
+
+        addTrade(recipeList, rand, 0.4F, new Offer(RailcraftToolItems.getCoalCoke(), 8, 12), new Offer(Items.emerald));
         addTrade(recipeList, rand, 0.4F, new Offer(Items.emerald), new Offer(RailcraftToolItems.getCoalCoke(), 12, 16));
 
         addTrade(recipeList, rand, 0.7F, new Offer(Blocks.rail, 30, 34), new Offer(Items.emerald, 2, 3));
